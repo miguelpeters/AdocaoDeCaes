@@ -1,7 +1,4 @@
-document.getElementById("button2").addEventListener("click", function(event) {
-    event.preventDefault(); // impede o envio padrão do form
-    window.location.href = "Adocao.html";
-});
+
 
 const form = document.getElementById("formAdocao");
 
@@ -40,5 +37,5 @@ form.addEventListener("submit", function (e) {
     if (!termo) return alert("Aceite o termo");
 
     alert("Formulário enviado!");
-    window.location.href = "dogs.html";
+    window.location.href = "Adocao.html";
 });
