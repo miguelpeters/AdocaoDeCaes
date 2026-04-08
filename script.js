@@ -21,6 +21,7 @@ form.addEventListener("submit", function (e) {
     const horas = +document.getElementById("horas").value;
     const motivo = document.getElementById("motivo").value.toLowerCase();
     const termo = document.getElementById("termo").checked;
+    const login = document.getElementById("button2").checked
 
     if (nome.length < 3) return alert("Nome inválido");
     if (!email.includes("@")) return alert("Email inválido");
@@ -35,6 +36,7 @@ form.addEventListener("submit", function (e) {
     if (motivo.length < 10 || motivo === "quero" || motivo === "porque sim")
         return alert("Motivo inválido");
     if (!termo) return alert("Aceite o termo");
+    if (!button2) return alert(" Faça o Cadastro Primeiro!")
 
     alert("Formulário enviado!");
     window.location.href = "Adocao.html";
